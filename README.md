@@ -9,11 +9,6 @@ It uses its own 3d rendering pipline(camera basis, coordinate transformations) a
 * **SDL2 Library:** Simple DirectMedia Layer for creating the window and drawing pixels.
 * **Make:** For building the project.
 
-### Installing SDL2
-* **Debian/Ubuntu:** `sudo apt-get install libsdl2-dev`
-* **Mac (Homebrew):** `brew install sdl2`
-* **Windows:** Download development libraries from [libsdl.org](https://www.libsdl.org/).
-
 ##  Build Instructions
 
 1.  **Compile the project:**
@@ -26,7 +21,7 @@ It uses its own 3d rendering pipline(camera basis, coordinate transformations) a
     ./rubix
     ```
 
-3.  Clear the executables:
+3.  Delete the executables:
     ```bash
     make clean
     ```
