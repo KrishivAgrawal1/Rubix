@@ -8,14 +8,17 @@ It uses its own 3d rendering pipline(camera basis, coordinate transformations) a
 
 It follows standard cubing notations:
 
-- f, b, u, d, l, r     : rotating the faces clockwise
-- F, B, U, D, L, R     : rotating the faces anticlockwise
-- s                    : scramble 
-- r                    : reset/solve 
-- Arrow Up/Down        : Rotate Camera Vertically ($\phi$)
-- Arrow Left/Right     : Rotate Camera Horizontally ($\theta$)
-- = / - (Equals/Minus) : Zoom Out/In ($\rho$)
-- q                    : Quit 
+
+| Keys   | Action    |
+|--------------- | --------------- |
+| f, b, u, d, l, r|         rotating the faces clockwise|
+| shift + f, b, u, d, l, r| rotating the faces anticlockwise|
+| s|                        scramble|
+| r|                        reset/solve|
+| arrow up/down|            rotate camera vertically ($\phi$)|
+| arrow left/right|         rotate camera horizontally ($\theta$)|
+| = / - (equals/minus)|     zoom out/in ($\rho$)|
+| q|                        quit|
 
 ### Implementation details
 
