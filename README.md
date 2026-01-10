@@ -9,14 +9,14 @@ It follows standard cubing notations:
 
 - f, b, u, d, l, r     : rotating the faces clockwise
 - F, B, U, D, L, R     : rotating the faces anticlockwise
-- s                    : scramble the cube (25 moves)
-- r                    : reset/solve the cube
+- s                    : scramble 
+- r                    : reset/solve 
 - Arrow Up/Down        : Rotate Camera Vertically ($\phi$)
 - Arrow Left/Right     : Rotate Camera Horizontally ($\theta$)
 - = / - (Equals/Minus) : Zoom Out/In ($\rho$)
-- q                    : Quit Application
+- q                    : Quit 
 
-### The Rendering Pipeline
+### Implementation details
 
 Unlike standard engines, I calculated the pixel coordinates for the cube vertices manually.
 - The cube stores an vector of size 54 with the colors for each cell.
@@ -33,7 +33,7 @@ Unlike standard engines, I calculated the pixel coordinates for the cube vertice
 * `geometry.cpp/h` : helpers for math operations (dot products, vector rotations).
 * `constants.h`    : stores screen dimensions, colors, etc.
 
-###  Build Instructions
+###  Running
 
 1.  **Compile the project:**
     ```bash
@@ -50,8 +50,3 @@ Unlike standard engines, I calculated the pixel coordinates for the cube vertice
     make clean
     ```
 
-### Dependencies
-
-- C++ Compiler: C++17 
-- SDL2 Library 
-- Make
