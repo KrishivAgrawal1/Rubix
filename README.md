@@ -1,32 +1,9 @@
-# 3D Rubik's Cube Engine
+### 3D Rubik's Cube Engine
 
 A C++ based 3D Rubik's Cube simulation built from scratch. 
 It uses its own 3d rendering pipline(camera basis, coordinate transformations) and sdl2 for low-level drawing.
 
-## Dependencies
-
-- C++ Compiler: C++17 
-- SDL2 Library 
-- Make
-
-##  Build Instructions
-
-1.  **Compile the project:**
-    ```bash
-    make rubix
-    ```
-
-2.  **Run the executable:**
-    ```bash
-    ./rubix
-    ```
-
-3.  Delete the executables:
-    ```bash
-    make clean
-    ```
-
-##  Keys
+###  Keys
 
 It follows standard cubing notations:
 
@@ -48,10 +25,33 @@ Unlike standard engines, I calculated the pixel coordinates for the cube vertice
 - The camera has a 3 basis vectors - forward, right, up.
 - Dot product of the basis vectors with the normal vectors of each facelet deciding which facelets to render.
 
-##  File Structure
+###  File Structure
 
 * `main.cpp`       : SDL event loop and input processing.
 * `cube.cpp/h`     : cube state, facelet generation, and rotation logic.
 * `camera.cpp/h`   : spherical coordinates for the camera and basis vector calculations.
 * `geometry.cpp/h` : helpers for math operations (dot products, vector rotations).
 * `constants.h`    : stores screen dimensions, colors, etc.
+
+###  Build Instructions
+
+1.  **Compile the project:**
+    ```bash
+    make rubix
+    ```
+
+2.  **Run the executable:**
+    ```bash
+    ./rubix
+    ```
+
+3.  Delete the executables:
+    ```bash
+    make clean
+    ```
+
+### Dependencies
+
+- C++ Compiler: C++17 
+- SDL2 Library 
+- Make
