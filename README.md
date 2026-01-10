@@ -1,4 +1,5 @@
 ### 3D Rubik's Cube Engine
+![](./assets/demo.gif)
 
 A C++ based 3D Rubik's Cube simulation built from scratch. 
 It uses its own 3d rendering pipline(camera basis, coordinate transformations) and sdl2 for low-level drawing.
