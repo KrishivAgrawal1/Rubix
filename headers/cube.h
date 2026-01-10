@@ -40,22 +40,22 @@ public:
         this->rotate('z', -1, pi / 2);
     }
     void cube_f1() {
-        this->rotate('x', 1, -pi / 2);
+        this->rotate('x', 1, pi / 2);
     }
     void cube_b1() {
-        this->rotate('x', -1, pi / 2);
+        this->rotate('x', -1, -pi / 2);
     }
     void cube_u1() {
-        this->rotate('y', 1, -pi / 2);
+        this->rotate('y', 1, pi / 2);
     }
     void cube_d1() {
-        this->rotate('y', -1, pi / 2);
+        this->rotate('y', -1, -pi / 2);
     }
     void cube_l1() {
-        this->rotate('z', 1, -pi / 2);
+        this->rotate('z', 1, pi / 2);
     }
     void cube_r1() {
-        this->rotate('z', -1, pi / 2);
+        this->rotate('z', -1, -pi / 2);
     }
 
     void scramble();

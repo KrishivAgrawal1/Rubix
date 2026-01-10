@@ -109,6 +109,7 @@ int main() {
 
     while (isRunning) {
         while (SDL_PollEvent(&event)) {
+            bool shiftActive = (event.key.keysym.mod & KMOD_SHIFT);
             switch (event.type) {
                 case SDL_QUIT:
                     isRunning = false;
@@ -145,22 +146,46 @@ int main() {
                             break;
 
                         case SDLK_f:
-                            c1.cube_f();
+                            if (shiftActive) {
+                                c1.cube_f1();
+                            } else {
+                                c1.cube_f();
+                            };
                             break;
                         case SDLK_b:
-                            c1.cube_b();
+                            if (shiftActive) {
+                                c1.cube_b1();
+                            } else {
+                                c1.cube_b();
+                            }
                             break;
                         case SDLK_u:
-                            c1.cube_u();
+                            if (shiftActive) {
+                                c1.cube_u1();
+                            } else {
+                                c1.cube_u();
+                            }
                             break;
                         case SDLK_d:
-                            c1.cube_d();
+                            if (shiftActive) {
+                                c1.cube_d1();
+                            } else {
+                                c1.cube_d();
+                            }
                             break;
                         case SDLK_l:
-                            c1.cube_l();
+                            if (shiftActive) {
+                                c1.cube_l1();
+                            } else {
+                                c1.cube_l();
+                            }
                             break;
                         case SDLK_r:
-                            c1.cube_r();
+                            if (shiftActive) {
+                                c1.cube_r1();
+                            } else {
+                                c1.cube_r();
+                            }
                             break;
                         case SDLK_s:
                             c1.scramble();
