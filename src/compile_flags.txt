@@ -1,0 +1,3 @@
+-I../headers
+-Wall
+-std=c++17
