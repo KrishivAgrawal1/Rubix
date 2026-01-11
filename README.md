@@ -1,4 +1,4 @@
-### 3D Rubik's Cube Engine
+### 3D Rubik's Cube 
 ![](./assets/demo.gif)
 
 A C++ based 3D Rubik's Cube simulation built from scratch. 
