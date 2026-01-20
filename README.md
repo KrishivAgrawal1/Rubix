@@ -22,7 +22,6 @@ It follows standard cubing notations:
 
 ### Implementation details
 
-Unlike standard engines, I calculated the pixel coordinates for the cube vertices manually.
 - The cube stores an vector of size 54 with the colors for each cell.
 - It also stores a vector of 54 facelets defined in 3D $(x, y, z)$ space. 
 - Each facelet stores the position and normal vector for a cell.
@@ -49,7 +48,7 @@ Unlike standard engines, I calculated the pixel coordinates for the cube vertice
     ./rubix
     ```
 
-3.  Delete the executables:
+3.  **Delete the executables:**
     ```bash
     make clean
     ```
